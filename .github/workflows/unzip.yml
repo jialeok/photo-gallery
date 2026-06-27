@@ -3,6 +3,9 @@ name: Unzip photo-gallery.zip and commit
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   unzip_and_commit:
     runs-on: ubuntu-latest
